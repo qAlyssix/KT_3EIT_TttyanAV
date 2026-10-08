@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Бронирование — PIXEL ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span class="logo-word">PIXEL ZONE</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="prices.html">Цены</a>
+      <a href="games.html">Игры</a>
+      <a href="booking.html" class="active">Бронирование</a>
+      <a href="promo.html">Акции</a>
+      <a href="contacts.html">Адрес</a>
+    </nav>
+    <button class="burger">☰</button>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="bg-word">BOOK</div>
+      <div class="container">
+        <span class="tag">Бронирование</span>
+        <h1 class="title">Выберите <span class="orange">место</span></h1>
+        <p class="page-text">Отметьте свободные компьютеры на схеме зала, заполните форму — и место будет ждать вас.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="booking">
+          <div class="panel">
+            <div class="hall-screen">Вход · Ресепшен</div>
+            <div class="hall" id="hall"></div>
+            <div class="legend" id="legend"></div>
+          </div>
+
+          <form class="panel form" id="form" novalidate>
+            <h2 class="title form-title">Бронирование</h2>
+
+            <div class="field">
+              <span>Выбранные места</span>
+              <div class="chips" id="chips"></div>
+            </div>
+
+            <label class="field">
+              <span>Имя</span>
+              <input type="text" id="name" placeholder="Как к вам обращаться">
+            </label>
+
+            <label class="field">
+              <span>Телефон</span>
+              <input type="tel" id="phone" placeholder="+7 (___) ___-__-__">
+            </label>
+
+            <div class="form-row">
+              <label class="field">
+                <span>Дата</span>
+                <input type="date" id="date">
+              </label>
+              <label class="field">
+                <span>Время</span>
+                <input type="time" id="time" value="18:00">
+              </label>
+            </div>
+
+            <label class="field">
+              <span>Пакет</span>
+              <select id="package">
+                <option value="0">1 час</option>
+                <option value="1" selected>3 часа</option>
+                <option value="2">5 часов</option>
+                <option value="3">Ночь 22–08</option>
+              </select>
+            </label>
+
+            <label class="field">
+              <span>Промокод</span>
+              <input type="text" id="promo" placeholder="Например, PZ-AB12C" autocomplete="off">
+            </label>
+            <p class="promo-status" id="promo-status"></p>
+
+            <p class="total">Итого: <b id="total">0 ₽</b></p>
+
+            <button class="btn" type="submit">Забронировать</button>
+          </form>
+        </div>
+
+        <p class="hint">
+          <b>Управление:</b><br>
+          Мышь — клик по месту выбирает его, зажмите кнопку и проведите по ряду, чтобы выбрать несколько мест, правый клик — информация о месте<br>
+          Клавиатура — <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> двигают рамку по залу, <kbd>Пробел</kbd> выбирает место, <kbd>Esc</kbd> снимает все отметки
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="seat-info" id="seat-info"></div>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <div class="modal-icon">🎮</div>
+      <h2 class="title">Готово!</h2>
+      <p class="modal-text" id="modal-text"></p>
+      <button class="btn" id="modal-ok">Отлично</button>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2026 PIXEL ZONE — компьютерный клуб
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>

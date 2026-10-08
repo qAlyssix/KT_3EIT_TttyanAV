@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Акции — PIXEL ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span class="logo-word">PIXEL ZONE</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="prices.html">Цены</a>
+      <a href="games.html">Игры</a>
+      <a href="booking.html">Бронирование</a>
+      <a href="promo.html" class="active">Акции</a>
+      <a href="contacts.html">Адрес</a>
+    </nav>
+    <button class="burger">☰</button>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="bg-word">BONUS</div>
+      <div class="container">
+        <span class="tag">Акции и бонусы</span>
+        <h1 class="title">Играйте <span class="orange">выгодно</span></h1>
+        <p class="page-text">Крутите колесо удачи, забирайте промокод и показывайте его на ресепшене.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container wheel-section">
+        <div class="wheel-wrap">
+          <div class="wheel-pointer"></div>
+          <div class="wheel" id="wheel"></div>
+          <div class="wheel-hub">PZ</div>
+        </div>
+
+        <div>
+          <h2 class="title section-title">Колесо <span class="orange">удачи</span></h2>
+          <p class="section-sub">Нажмите на колесо или на пробел. Приз выпадает случайно — каждый получит что-то полезное.</p>
+          <button class="btn" id="spin">Крутить колесо</button>
+          <div class="prize" id="prize"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title section-title">Действующие <span class="orange">акции</span></h2>
+        <p class="section-sub">Таймеры показывают, сколько осталось до конца акции.</p>
+
+        <div class="promos">
+  <div class="promo">
+    <div class="promo-icon">⭐</div>
+    <h3 class="title">Отзыв = 1 час</h3>
+    <p>Оставьте отзыв о клубе на картах и получите час игры бесплатно.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+  <div class="promo">
+    <div class="promo-icon">👥</div>
+    <h3 class="title">Приведи друга</h3>
+    <p>Вы и друг получаете по часу в подарок после его первой игры.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+  <div class="promo">
+    <div class="promo-icon">🌙</div>
+    <h3 class="title">Ночной марафон</h3>
+    <p>Ночной пакет в Bootcamp для команды из пяти человек — скидка 25%.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+  <div class="promo">
+    <div class="promo-icon">☀️</div>
+    <h3 class="title">Утро в клубе</h3>
+    <p>С 8 до 12 часов цены на 30% ниже, чем днём.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+  <div class="promo">
+    <div class="promo-icon">🎂</div>
+    <h3 class="title">День рождения</h3>
+    <p>В день рождения и три дня после — скидка 50% на любой пакет.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+  <div class="promo">
+    <div class="promo-icon">⚡</div>
+    <h3 class="title">Вторник в VIP</h3>
+    <p>Каждый вторник: три часа в VIP по цене Comfort.</p>
+    <span class="tag">Постоянно</span>
+  </div>
+</div>
+
+        <p class="hint">
+          <b>Управление:</b><br>
+          Мышь — клик по колесу или кнопке крутит его, клик по промокоду копирует его<br>
+          Клавиатура — <kbd>Пробел</kbd> крутит колесо, <kbd>C</kbd> копирует промокод
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 PIXEL ZONE — компьютерный клуб
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/promo.js"></script>
+</body>
+</html>

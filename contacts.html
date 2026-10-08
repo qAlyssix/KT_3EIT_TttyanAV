@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Адреса — PIXEL ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span class="logo-word">PIXEL ZONE</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="prices.html">Цены</a>
+      <a href="games.html">Игры</a>
+      <a href="booking.html">Бронирование</a>
+      <a href="promo.html">Акции</a>
+      <a href="contacts.html" class="active">Адрес</a>
+    </nav>
+    <button class="burger">☰</button>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="bg-word">MAP</div>
+      <div class="container">
+        <span class="tag">Как добраться</span>
+        <h1 class="title">Где <span class="orange">нас найти</span></h1>
+        <p class="page-text">Мы находимся в самом центре города, в пяти минутах от остановки «Площадь». Работаем круглосуточно — приходите в любое время.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="map-layout">
+          <div class="map-box">
+            <canvas id="map"></canvas>
+          </div>
+
+          <div class="panel branch-card" id="branch-card">
+            <span class="tag">Круглосуточно</span>
+            <h2 class="title">PIXEL ZONE</h2>
+            <div class="branch-rows">
+              <div><b>Адрес</b><span>ул. Ленина, 15</span></div>
+              <div><b>Ориентир</b><span>вход со двора, 2 этаж</span></div>
+              <div><b>Зал</b><span>32 места · 5 зон</span></div>
+              <div><b>Телефон</b><span>+7 (900) 000-00-00</span></div>
+            </div>
+            <a class="btn" href="booking.html">Забронировать место</a>
+          </div>
+        </div>
+
+        <p class="hint">
+          <b>Управление:</b><br>
+          Мышь — перетаскивайте карту, колесо мыши меняет масштаб, клик по метке показывает маршрут<br>
+          Клавиатура — <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> двигают карту, <kbd>+</kbd> <kbd>−</kbd> масштаб, <kbd>Enter</kbd> маршрут до клуба, <kbd>0</kbd> весь город
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title section-title">Мы <span class="orange">на связи</span></h2>
+        <div class="socials">
+          <a class="panel social" href="#">
+            <span class="social-icon">✈</span>
+            <span><b>Telegram</b><br><span class="muted">@pixelzone_club</span></span>
+          </a>
+          <a class="panel social" href="#">
+            <span class="social-icon">VK</span>
+            <span><b>ВКонтакте</b><br><span class="muted">vk.com/pixelzone</span></span>
+          </a>
+          <a class="panel social" href="#">
+            <span class="social-icon">☎</span>
+            <span><b>Телефон</b><br><span class="muted">+7 (900) 000-00-00</span></span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 PIXEL ZONE — компьютерный клуб
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/contacts.js"></script>
+</body>
+</html>

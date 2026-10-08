@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Игры — PIXEL ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span class="logo-word">PIXEL ZONE</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="prices.html">Цены</a>
+      <a href="games.html" class="active">Игры</a>
+      <a href="booking.html">Бронирование</a>
+      <a href="promo.html">Акции</a>
+      <a href="contacts.html">Адрес</a>
+    </nav>
+    <button class="burger">☰</button>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="bg-word">GAMES</div>
+      <div class="container">
+        <span class="tag">Список игр</span>
+        <h1 class="title">Во что <span class="orange">поиграть</span></h1>
+        <p class="page-text">Все популярные игры уже установлены и обновлены. Аккаунты Steam, Epic и Battle.net — свои.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="games-bar">
+          <input class="search" id="search" type="text" placeholder="Поиск по названию…" autocomplete="off">
+          <div class="tabs" id="genres"></div>
+        </div>
+
+        <div class="games" id="games"></div>
+        <p class="empty" id="empty">Ничего не нашлось. Попробуйте другое название.</p>
+
+        <p class="hint">
+          <b>Управление:</b><br>
+          Мышь — клик по игре открывает описание, двойной клик добавляет в избранное ★<br>
+          Клавиатура — поиск по названию, <kbd>←</kbd> <kbd>→</kbd> листают игры в окне, <kbd>Esc</kbd> закрывает окно
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close">✕</button>
+      <div class="modal-cover" id="modal-cover"></div>
+      <h2 class="title" id="modal-title"></h2>
+      <div class="modal-tags" id="modal-tags"></div>
+      <p class="modal-text" id="modal-text"></p>
+      <div class="modal-nav">
+        <button class="tab" id="prev">←</button>
+        <a class="btn" href="booking.html">Забронировать ПК</a>
+        <button class="tab" id="next">→</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    © 2026 PIXEL ZONE — компьютерный клуб
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/games.js"></script>
+</body>
+</html>

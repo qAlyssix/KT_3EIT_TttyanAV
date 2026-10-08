@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Цены — PIXEL ZONE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;0,900;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">P</span>
+      <span class="logo-word">PIXEL ZONE</span>
+    </a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="prices.html" class="active">Цены</a>
+      <a href="games.html">Игры</a>
+      <a href="booking.html">Бронирование</a>
+      <a href="promo.html">Акции</a>
+      <a href="contacts.html">Адрес</a>
+    </nav>
+    <button class="burger">☰</button>
+  </header>
+
+  <main>
+    <section class="page-head">
+      <div class="bg-word">PRICE</div>
+      <div class="container">
+        <span class="tag">Прайс</span>
+        <h1 class="title">Цены <span class="orange">и зоны</span></h1>
+        <p class="page-text">Пять игровых зон на любой вкус и бюджет. Чем больше часов — тем дешевле каждый час.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tabs">
+          <button class="tab active">Будни</button>
+          <button class="tab">Выходные</button>
+          <button class="tab">Утро</button>
+        </div>
+        <p class="tab-note" id="tab-note"></p>
+
+        <div class="table-wrap">
+          <table class="price-table" id="price-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th data-col="0" style="color: #ff7a00">Comfort</th>
+                <th data-col="1" style="color: #ffc23d">VIP</th>
+                <th data-col="2" style="color: #ff4d3d">Bootcamp</th>
+                <th data-col="3" style="color: #b56bff">Squad</th>
+                <th data-col="4" style="color: #3d8bff">PS5</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1 час</td>
+                <td data-col="0"></td><td data-col="1"></td><td data-col="2"></td><td data-col="3"></td><td data-col="4"></td>
+              </tr>
+              <tr>
+                <td>3 часа</td>
+                <td data-col="0"></td><td data-col="1"></td><td data-col="2"></td><td data-col="3"></td><td data-col="4"></td>
+              </tr>
+              <tr>
+                <td>5 часов</td>
+                <td data-col="0"></td><td data-col="1"></td><td data-col="2"></td><td data-col="3"></td><td data-col="4"></td>
+              </tr>
+              <tr>
+                <td>Ночь 22–08</td>
+                <td data-col="0"></td><td data-col="1"></td><td data-col="2"></td><td data-col="3"></td><td data-col="4"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title section-title">Железо <span class="orange">и периферия</span></h2>
+        <p class="section-sub">Нажмите на карточку, чтобы перевернуть её и посмотреть комплектацию.</p>
+
+        <div class="zones">
+          <div class="zone" style="--c: #ff7a00">
+            <div class="zone-inner">
+              <div class="zone-face">
+                <h3 class="title">Comfort</h3>
+                <p class="from">от <b>100</b> ₽/час</p>
+                <ul><li>Общий зал</li><li>Монитор 165 Гц</li><li>12 мест</li></ul>
+                <span class="more">Нажмите — комплектация ↻</span>
+              </div>
+              <div class="zone-face zone-back">
+                <h3 class="title">Comfort</h3>
+                <div class="specs">
+                  <div><span>Процессор</span>i5-12400F</div>
+                  <div><span>Видеокарта</span>RTX 4060</div>
+                  <div><span>Память</span>16 GB</div>
+                  <div><span>Монитор</span>27" 165 Гц</div>
+                </div>
+                <span class="more">Нажмите — назад ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="zone" style="--c: #ffc23d">
+            <div class="zone-inner">
+              <div class="zone-face">
+                <h3 class="title">VIP</h3>
+                <p class="from">от <b>120</b> ₽/час</p>
+                <ul><li>Тихий зал</li><li>Монитор 240 Гц</li><li>8 мест</li></ul>
+                <span class="more">Нажмите — комплектация ↻</span>
+              </div>
+              <div class="zone-face zone-back">
+                <h3 class="title">VIP</h3>
+                <div class="specs">
+                  <div><span>Процессор</span>i5-13400F</div>
+                  <div><span>Видеокарта</span>RTX 4060 Ti</div>
+                  <div><span>Память</span>32 GB</div>
+                  <div><span>Монитор</span>27" 240 Гц</div>
+                </div>
+                <span class="more">Нажмите — назад ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="zone" style="--c: #ff4d3d">
+            <div class="zone-inner">
+              <div class="zone-face">
+                <h3 class="title">Bootcamp</h3>
+                <p class="from">от <b>130</b> ₽/час</p>
+                <ul><li>Комната для команды</li><li>Для тренировок</li><li>5 мест</li></ul>
+                <span class="more">Нажмите — комплектация ↻</span>
+              </div>
+              <div class="zone-face zone-back">
+                <h3 class="title">Bootcamp</h3>
+                <div class="specs">
+                  <div><span>Процессор</span>i7-13700F</div>
+                  <div><span>Видеокарта</span>RTX 5060</div>
+                  <div><span>Память</span>32 GB</div>
+                  <div><span>Монитор</span>25" 240 Гц</div>
+                </div>
+                <span class="more">Нажмите — назад ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="zone" style="--c: #b56bff">
+            <div class="zone-inner">
+              <div class="zone-face">
+                <h3 class="title">Squad</h3>
+                <p class="from">от <b>140</b> ₽/час</p>
+                <ul><li>Комната с диваном</li><li>Большой ТВ</li><li>5 мест</li></ul>
+                <span class="more">Нажмите — комплектация ↻</span>
+              </div>
+              <div class="zone-face zone-back">
+                <h3 class="title">Squad</h3>
+                <div class="specs">
+                  <div><span>Процессор</span>i7-13700F</div>
+                  <div><span>Видеокарта</span>RTX 5060</div>
+                  <div><span>Память</span>32 GB</div>
+                  <div><span>Бонус</span>ТВ 65"</div>
+                </div>
+                <span class="more">Нажмите — назад ↻</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="zone" style="--c: #3d8bff">
+            <div class="zone-inner">
+              <div class="zone-face">
+                <h3 class="title">PS5</h3>
+                <p class="from">от <b>150</b> ₽/час</p>
+                <ul><li>Приставка + ТВ</li><li>Два геймпада</li><li>2 места</li></ul>
+                <span class="more">Нажмите — комплектация ↻</span>
+              </div>
+              <div class="zone-face zone-back">
+                <h3 class="title">PS5</h3>
+                <div class="specs">
+                  <div><span>Консоль</span>PS5 Pro</div>
+                  <div><span>Экран</span>ТВ 55" 4K</div>
+                  <div><span>Геймпады</span>2 шт.</div>
+                  <div><span>Игры</span>FIFA, MK, GTA</div>
+                </div>
+                <span class="more">Нажмите — назад ↻</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p class="hint">
+          <b>Управление:</b><br>
+          Мышь — клик по вкладкам, наведите на колонку таблицы, наклон и переворот карточек<br>
+          Клавиатура — <kbd>←</kbd> <kbd>→</kbd> переключают будни / выходные / утро
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2026 PIXEL ZONE — компьютерный клуб
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/prices.js"></script>
+</body>
+</html>
